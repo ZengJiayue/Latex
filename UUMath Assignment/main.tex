@@ -1,0 +1,152 @@
+\documentclass[a4paper,11pt,fleqn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{left=2.0cm, right=2.0cm, top=4.0cm, bottom=2.0cm}
+
+\title{Home work assignment in Mathematics }
+
+\begin{document}
+\maketitle
+\large  Course: B1 Probability Theory and Statistical Inference, Fall 2016 
+\vskip 1.0cm
+Name: Jiayue Zeng
+\vskip 1.0cm
+Responsible teacher: Patrik Andersson 
+
+
+
+
+\newpage
+\textbf{Task 1}
+\vskip 0.5cm
+Find the derivative with respect to x of the following functions, simplify the result as much as possible.
+
+\vskip 0.5cm
+$ \left( a \right) \ f \left( x \right) = \frac{lnx}{x}$ 
+\vskip 0.5cm
+\qquad $ f' \left( x \right) =\frac{\left(lnx\right)'x-lnx}{x^2}= \frac{\frac{1}{x} x-lnx}{x^2} =\frac{1-lnx}{x^2}  $ 
+
+\vskip 0.5cm
+$\left( b \right) \ g \left( x \right) = e^{2\sqrt x}  $
+\vskip 0.5cm
+\qquad $ g' \left( x \right) = e^{2\sqrt x} \left(2\sqrt x \right)'=x^{-\frac{1}{2}}e^{2\sqrt x}  $
+
+\vskip 0.5cm
+$\left( c \right) \ h \left( x \right) = xe^{x^2} $
+\vskip 0.5cm
+\qquad $ h' \left( x \right) = \left(x\right)'e^{x^2}+x\left(e^{x^2}\right)'=e^{x^2}+2x^2e^{x^2}  $
+
+\vskip 0.7cm
+
+
+
+\textbf{Task 2}
+\vskip 0.5cm
+Find the derivative of the following functions with respect to x. Use the notation you find appropriate and motivate the steps. Simplify the result as much as possible.
+
+\vskip 0.5cm
+$ \left( a \right) \ f \left( x \right) = \frac{x+x^2}{3x^2}$ 
+\vskip 0.5cm
+\qquad $ f' \left( x \right) =\frac{\left(x+x^2\right)'\left(3x^2\right)-\left(3x^2\right)'\left(x+x^2\right)}{3x^2}=\frac{\left(1+2x\right)(3x^2)-(x+x^2)(6x)}{9x^4} $
+\vskip 0.5cm
+\qquad \qquad \;   $=\frac{3x^2+6x^3-6x^2-6x^3}{9x^4}=\frac{-3x^2}{9x^4}=-\frac{1}{3x^2}   $ 
+
+\vskip 0.5cm
+$\left( b \right) \ g \left( x \right) = exp(3x^3+1)  $
+\vskip 0.5cm
+\qquad $ g' \left( x \right) = exp(3x^3+1)(3x^3+1)' = 9x^2exp(3x^3 +1)  $
+
+
+
+\newpage
+
+\textbf{Task 3}
+\vskip 0.5cm
+Calculate the following integrals. The final answer should be exact. 
+\vskip 0.5cm
+
+$\left( a \right) \, \int_{0}^{1} e^{-3x}dx = [-\frac{1}{3}e^{-3x}]_0^1 = (-\frac{1}{3} e^{-3})-(-\frac{1}{3}e^0) = \frac{1}{3}-\frac{1}{3}e^{-3}  $
+\vskip 0.5cm
+
+$\left( b \right) \, \int_{1}^{2}\frac{1}{\sqrt{2x}}dx = [\sqrt{2x}]_{1}^{2} = \sqrt{4}-\sqrt{2}=2-\sqrt 2
+$
+\vskip 0.5cm
+
+$\left( c \right) \,  \int_{1}^{2}\frac{2x^2+x+3}{x}dx = \int_{1}^{2}2x+1+\frac{3}{x}dx = [x^2+x+3lnx]_{1}^{2}  $
+\vskip 0.5cm
+\qquad \; $= (4+2+3ln2)-(1+1-3ln1) = 4+3ln2  $
+\vskip 0.7cm
+
+
+\textbf{Task 4}
+\vskip 0.5cm
+Calculate the following integrals, simplify the result as much as possible. 
+\vskip 0.5cm
+$\left( a \right)$  Consider the function $\;  u(x)=x^2 $, we have $\; 
+u(x)'=2x $.
+\vskip 0.5cm
+$\int xe^{x^2}dx = \int (xe^{u}) (\frac{1}{2x})du= \int \frac{1}{2}e^u du = \frac{1}{2}e^{u}+ C = \frac{1}{2}e^{x^2}+C  $
+\vskip 0.5cm
+
+$\left( b \right)\, $ 
+Choose $\; f(x)=log(x), g'(x)=x $ which gives $\; f'(x)=\frac{1}{x}\; $and $\; g(x)=\frac{1}{2}x^2$. 
+\vskip 0.5cm
+$  \int xlog(x)dx = f(x)g(x)- \int f'(x)g(x)dx $
+\vskip 0.5cm
+\qquad \qquad \quad $ =\frac{1}{2}x^2 log(x)-\int \frac{1}{2}x^2\frac{1}{x}dx $
+\vskip 0.5cm
+\qquad \qquad \quad $ =\frac{1}{2}x^2 log(x)-\frac{1}{4}x^2+C $
+
+\vskip 0.7cm
+\textbf{Task 5}
+\vskip 0.5cm
+\quad a) Find the value of c that makes p(x) a probability density function.
+\vskip 0.5cm
+If p(x) is a probability function, we must ensure that:
+$\;F(\infty)=\int_{-\infty}^{\infty} p(x)dx =1 $. 
+And we know that, $\;F(\infty)=\int_{-\infty}^{\infty} p(x)dx = \int_{1}^{2} p(x)dx $
+\vskip 0.5cm
+\large $\int_{1}^{2}\frac{c}{x}dx = c\int_{1}^{2} \frac{1}{x}dx 
+= c[ln(x)]_{1}^{2}$
+\vskip 0.5cm
+\qquad \quad $\, =c(ln2-0)=cln2=1 $
+\vskip 0.5cm
+So, \quad
+\large $\; c=\frac{1}{ln2} $
+
+\newpage
+\vskip 0.5cm
+b) Find the expected value 
+\vskip 0.5cm
+$\mu_{X} = E(X) = \int_{1}^{2} xp(x)dx 
+= \int_{1}^{2}x\frac{1}{ln2}\frac{1}{x} dx $
+\vskip 0.5cm
+\quad $ \; \, = \int_{1}^{2} \frac{1}{ln2}dx
+= \frac{1}{ln2}[x]_{1}^{2}  
+= \frac{1}{ln2}$
+
+
+\vskip 0.5cm
+c) Find the variance
+\vskip 0.5cm
+$ V(X)=E(X^2)-\mu_{X}^{2}
+
+\vskip 0.5cm
+$
+E(X^2)=\int_{1}^{2}x^{2}p(x)dx
+= \int_{1}^{2}x^{2}\frac{1}{ln2}\frac{1}{x}dx
+= \frac{1}{ln2}\int_{1}^{2}xdx
+= \frac{1}{ln2}[\frac{1}{2}x^2]_{1}^{2}
+= \frac{1}{ln2}(2-\frac{1}{2})
+= \frac{3}{2ln2}
+$
+\vskip 0.5cm
+$
+V(X) =E(X^2)-\mu_{X}^{2} = \frac{3}{2ln2}-(\frac{1}{ln2})^2
+$
+
+
+\end{document}
